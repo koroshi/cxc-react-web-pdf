@@ -5,6 +5,9 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   base: './', // 关键：让资源路径相对于 HTML 文件
   plugins: [react()],
+    build: {
+    outDir: 'docs', // 输出目录改为 docs
+  }
   // server: {
   //   port: 3000,
   //   open: true, // 自动打开浏览器
