@@ -163,7 +163,7 @@ const PdfReader = () => {
               onLoadError={console.error}
             >
               {Array.from(new Array(numPages), (_, i) => (
-                <div key={i} className="pdf-page-wrapper" style={{ position: 'relative', width: 800, zIndex: 1000, border: `1px solid ${colorKey[i]}` }}>
+                <div key={i} className="pdf-page-wrapper" style={{ position: 'relative', width: 800, zIndex: 1000 }}>
                   <Page key={i} pageNumber={i + 1} width={800} onMouseUp={(e) => handleSelection(i + 1)} />
                   {renderAnnotations(i + 1)}
                 </div>
