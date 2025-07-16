@@ -24,7 +24,7 @@ const PdfReader = () => {
   const [loading, setLoading] = useState(false);
   const pdfContainerRef = useRef(null);
   const [annotations, setAnnotations] = useState([]);
-  const [pdfUrl, setPdfUrl] = useState('https://koroshi.github.io/cxc-react-web-pdf/test.pdf');
+  const [pdfUrl, setPdfUrl] = useState('https://koroshi.github.io/cxc-react-web-pdf/plan.pdf');
 
   // 处理PDF文件上传
   const handleFileUpload = (e) => {
